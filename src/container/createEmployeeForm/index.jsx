@@ -138,17 +138,19 @@ export default function CreateEmployeeForm() {
       <TextInput id='firstName' label='First Name' type='text' />
       <TextInput id='lastName' label='Last Name' type='text' />
 
-      <label className='date-picker-label'>Date of Birth</label>
+      <label className='date-picker-label' for="dateOfBirth">Date of Birth</label>
       <DatePicker
         selected={dateOfBirth}
         onChange={(date) => setDateOfBirth(date)}
         filterDate={haveMajority}
+        id="dateOfBirth"
       />
 
-      <label className='date-picker-label'>Start Date</label>
+      <label className='date-picker-label' for="startDate">Start Date</label>
       <DatePicker
         selected={startDate}
         onChange={(date) => setStartDate(date)}
+        id="startDate"
       />
       <Fieldset className='address' legend='Address'>
         <TextInput id='street' label='Street' type='text' />

@@ -9,7 +9,9 @@ export default function CreateEmployee() {
         <h1>HRnet</h1>
       </div>
 
-      <NavLink to='/list'>View Current Employees</NavLink>
+      <NavLink to='/list' className='list-link'>
+        View Current Employees
+      </NavLink>
       <div className='container'>
         <h2>Create Employee</h2>
         <CreateEmployeeForm />
