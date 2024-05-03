@@ -89,7 +89,7 @@ export default function CreateEmployeeForm() {
 
   const haveMajority = (date) => {
     if (date) {
-      return moment().diff(date.toLocaleDateString('en-US'), 'years') >= 1
+      return moment().diff(date.toLocaleDateString('en-US'), 'years') >= 18
     } else {
       return true
     }
