@@ -1,0 +1,21 @@
+body {
+  position: relative;
+  margin: 0;
+
+  &:has(.modal-container.show) {
+    overflow: hidden;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
